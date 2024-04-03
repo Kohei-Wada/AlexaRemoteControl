@@ -1,0 +1,29 @@
+---
+name: "Alexa Remote Control"
+description: "alexa_remote_control.sh wrapper"
+version: "1.0.0"
+slug: "alexa"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+map:
+  - share:rw
+ports:
+  22/tcp: 2222
+options:
+  refresh_token: ""
+  language: "ja-JP"
+  tts_locale: "ja-JP"
+  amazon_domain: "amazon.co.jp"
+  alexa_domain: "alexa.amazon.co.jp"
+schema:
+  refresh_token: "str?"
+  language: "str?"
+  tts_locale: "str?"
+  amazon_domain: "str?"
+  alexa_domain: "str?"
+...
